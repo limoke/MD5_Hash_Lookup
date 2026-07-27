@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MD5 Hash Lookup Tool</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>MD5 Hash Lookup</h1>
+
+        <p class="subtitle">
+            Enter an MD5 hash to search the local hash database
+        </p>
+
+
+        <form method="POST" action="/lookup">
+
+            <input 
+                type="text"
+                name="md5_hash"
+                placeholder="Enter MD5 hash..."
+                autocomplete="off"
+                required
+            >
+
+
+            <div class="buttons">
+
+                <button type="submit">
+                    Search
+                </button>
+
+
+                <button 
+                    type="reset"
+                    class="clear"
+                >
+                    Clear
+                </button>
+
+            </div>
+
+
+        </form>
+
+
+
+        {% if result %}
+
+        <div class="result">
+
+            {{ result }}
+
+        </div>
+
+        {% endif %}
+
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>

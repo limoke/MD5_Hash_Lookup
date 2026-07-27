@@ -1,0 +1,10 @@
+/COM,ANSYS RELEASE 2024 R1           BUILD 24.1      UP20231106       23:08:59
+
+ *** ERROR ***                           CP =       0.328   TIME= 23:09:01
+ Data file C:\Users\liyal\AppData\Local\Temp\Rar$DIa29496.7163.rartemp\da
+ tabase.db has incorrect format, is missing READ/WRITE permission, or    
+ is empty for RESUME.                                                    
+
+ *** WARNING ***                         CP =       0.328   TIME= 23:09:01
+ WHILE PROCESSING FILE BASED INPUT (/INPUT OR MACRO) AN ERROR HAS        
+ OCCURRED.  SHOULD INPUT PROCESSING BE SUSPENDED?                        
